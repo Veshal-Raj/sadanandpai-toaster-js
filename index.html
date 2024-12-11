@@ -8,6 +8,43 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <select name="horizontal-position" id="horizontal-position">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+            </select>
+        </div>
+        <div class="row">
+            <select name="vertical-position" id="vertical-position">
+                <option value="top">Top</option>
+                <option value="bottom">Bottom</option>
+            </select>
+        </div>
+        <div class="row">
+            <select name="toast-type" id="toast-type">
+                <option value="normal">Normal</option>
+                <option value="success">Success</option>
+                <option value="error">Error</option>
+                <option value="warning">Warning</option>
+                <option value="info">Info</option>
+            </select>
+        </div>
+        <div class="row">
+            <input type="text" value="This is a toast message!" id="toast-msg">
+        </div>
+        <div class="slidecontainer">
+            <span>Duration</span>
+            <input type="range" min="3" max="10" value="3" class="slider" id="toast-range">
+            <span id="duration-val">3s</span>
+        </div>
+        <div class="row">
+            <button id="show-toast" class="show-toast-btn">Show Toast</button>
+        </div>
+    </div>
+    <div class="toast-container top-left"></div>
+    <div class="toast-container top-right"></div>
+    <div class="toast-container bottom-left"></div>
+    <div class="toast-container bottom-right"></div>
 </body>
 </html>
